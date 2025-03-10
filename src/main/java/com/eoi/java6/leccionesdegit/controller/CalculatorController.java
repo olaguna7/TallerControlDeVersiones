@@ -8,6 +8,6 @@ public class CalculatorController {
 
     @GetMapping("/calculadora")
     public String mostrarCalculadora() {
-        return "calculator";
+        return "calculator"; // ✅ La vista carga, pero sin funcionalidad
     }
 }
