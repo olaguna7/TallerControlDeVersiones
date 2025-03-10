@@ -4,5 +4,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorService {
-    // ❌ Falta implementar la lógica de la calculadora
+    
+    public int multiplicar(int a, int b) {
+        return a * b; // ✅ Implementación de multiplicación
+    }
 }
