@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculadora</title>
+</head>
+<body>
+<h1>Calculadora</h1>
+<p>Introduce los valores y selecciona la operación</p>
+<form action="/resultado" method="get">
+    <input type="number" name="num1" placeholder="Número 1">
+    <input type="number" name="num2" placeholder="Número 2">
+    <button type="submit">Calcular</button>
+</form>
+
+<div th:if="${resultado != null}">
+    <h2>Resultado: <span th:text="${resultado}"></span></h2>
+</div>
+</body>
+</html>
