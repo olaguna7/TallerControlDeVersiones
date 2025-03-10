@@ -16,4 +16,13 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         assertEquals(2, calc.dividir(6, 3), "El método dividir() debe devolver 2 para (6,3)");
     }
+
+    @Test
+    public void testDividirPorCero() {
+        Calculator calc = new Calculator();
+        Exception exception = assertThrows(ArithmeticException.class, () -> {
+            calc.dividir(6, 0);
+        });
+        assertEquals("No se puede dividir por cero", exception.getMessage(), "El método dividir() debe lanzar una excepción cuando el divisor es 0");
+    }
 }
