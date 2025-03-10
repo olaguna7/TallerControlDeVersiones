@@ -8,6 +8,6 @@ public class CalculatorController {
 
     @GetMapping("/calculadora")
     public String mostrarCalculadora() {
-        return "Calculadora funcionando"; // ❌ Error: No devuelve la vista Thymeleaf
+        return "calculator";
     }
 }
