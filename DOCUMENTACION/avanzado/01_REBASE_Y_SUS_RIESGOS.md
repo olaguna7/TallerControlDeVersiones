@@ -1,5 +1,4 @@
 
-
 ## ⚠️ **¿Por Qué `rebase` Puede Ser Peligroso?**
 
 🔴 **1. Cambia el Historial de Git**
