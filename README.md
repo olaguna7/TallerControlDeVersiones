@@ -56,7 +56,7 @@ Esto creará una copia del repositorio en tu cuenta, donde podrás trabajar sin 
 6️⃣ **Una vez clonado, IntelliJ detectará automáticamente que es un proyecto Maven.**  
 7️⃣ **Ejecuta el comando `mvn install` desde la terminal de IntelliJ o usa la opción de `Reload Maven Project`.**
 
-✅ **Ahora estás listo para empezar el taller.**
+7✅ **Ahora estás listo para empezar el taller.**
 
 ---
 
@@ -88,6 +88,194 @@ Esto creará una copia del repositorio en tu cuenta, donde podrás trabajar sin 
 ✅ **Cada ejercicio en el taller se basa en una rama de Git diferente que contiene un conflicto intencional.**
 
 ---
+
+### 🚀 **Cómo Resolver los Ejercicios del Taller**
+
+### 🏆 **Metodología del Taller**
+Este taller está estructurado en **10 ejercicios**, organizados de forma progresiva. En cada ejercicio:
+
+1️⃣ Harás un **fetch para asegurarte de tener todas las ramas disponibles** en tu copia local.  
+2️⃣ **Cambiarás a la rama del ejercicio** en IntelliJ IDEA.  
+3️⃣ **Intentarás fusionarla con la otra rama que genera el conflicto**.  
+4️⃣ Resolverás el conflicto utilizando **las herramientas de IntelliJ IDEA**.  
+5️⃣ **Ejecutarás los tests automatizados** para validar que el código funciona correctamente.  
+6️⃣ **Confirmarás (`commit`) y subirás (`push`) la solución a GitHub**.
+
+Cada ejercicio tiene su propio archivo **README.md** con instrucciones detalladas. **Es importante seguirlos en orden, ya que los cambios en un ejercicio afectan los siguientes.**
+
+---
+
+### ✅ **Paso 1: Asegurar que tienes todas las ramas disponibles**
+
+🔹 **Si no ves las ramas del ejercicio en IntelliJ, primero haz un `fetch` para traerlas:**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Ve al menú **Git > Fetch** o usa el atajo `Ctrl + Alt + J` (Windows/Linux) o `Cmd + Shift + J` (Mac).  
+2️⃣ Espera a que IntelliJ actualice la lista de ramas.  
+3️⃣ Abre la ventana de Git (`Alt + 9` o `View > Tool Windows > Git`) y haz clic en `Branches`.  
+4️⃣ Expande `Remote Branches` y verifica que aparecen las ramas `ejercicioX-rama1` y `ejercicioX-rama2`.
+
+📌 **Comando equivalente en la terminal de IntelliJ:**
+```bash
+git fetch --all
+```
+
+✅ **Ahora verás todas las ramas remotas en tu IntelliJ.**
+
+---
+
+### ✅ **Paso 2: Cambiar a la Rama del Ejercicio**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Abre la ventana de Git (`Alt + 9` o `View > Tool Windows > Git`).  
+2️⃣ Haz clic en `Branches` y selecciona `ejercicio1-rama1`.  
+3️⃣ Haz clic en `Checkout`.
+
+📌 **Comando equivalente en la terminal de IntelliJ:**
+```bash
+git checkout ejercicio1-rama1
+```
+
+✅ **Ahora estás en la rama del ejercicio y listo para el siguiente paso.**
+
+---
+
+### ✅ **Paso 3: Intentar Fusionar con la Otra Rama**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Abre la ventana de Git (`Alt + 9`).  
+2️⃣ Haz clic en `Branches`.  
+3️⃣ Selecciona `ejercicio1-rama2` y elige `Merge into Current`.
+
+📌 **Comando equivalente en la terminal de IntelliJ:**
+```bash
+git merge ejercicio1-rama2
+```
+
+💥 **Git mostrará un conflicto en `Calculator.java`.**
+
+---
+
+### ✅ **Paso 4: Resolver el Conflicto en IntelliJ IDEA**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Se abrirá automáticamente la vista de resolución de conflictos.  
+2️⃣ Verás las versiones en conflicto:
+- **LEFT (HEAD - tu versión actual)**
+- **RIGHT (rama fusionada - cambios que intentas agregar)**  
+  3️⃣ **Usa los botones `Accept Left`, `Accept Right` o `Merge Manually`** para decidir qué cambios mantener.  
+  4️⃣ **Si es necesario, edita manualmente el código** para combinar ambas versiones.  
+  5️⃣ Haz clic en `Apply` para guardar los cambios.
+
+📌 **Comando equivalente en la terminal de IntelliJ:**
+```bash
+git status  # Verifica los archivos en conflicto
+nano src/main/java/com/eoi/java6/leccionesdegit/Calculator.java  # Editar manualmente el archivo
+git add src/main/java/com/eoi/java6/leccionesdegit/Calculator.java  # Marcar como resuelto
+```
+
+✅ **El conflicto está resuelto y listo para confirmarse.**
+
+---
+
+### ✅ **Paso 5: Ejecutar los Tests para Validar la Solución**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Abre la ventana de **Maven** (`View > Tool Windows > Maven`).  
+2️⃣ Expande `leccionesdegit > Lifecycle`.  
+3️⃣ Haz doble clic en `test`.
+
+📌 **Comando equivalente en la terminal de IntelliJ:**
+```bash
+./mvnw test  # Si usas Maven Wrapper
+mvn test     # Si tienes Maven instalado globalmente
+```
+
+✅ **Si todos los tests pasan, la fusión fue exitosa.**
+
+---
+
+### ✅ **Paso 6: Confirmar y Subir los Cambios**
+
+📌 **En IntelliJ IDEA:**  
+1️⃣ Abre la ventana de `Commit` (`Ctrl + K` en Windows/Linux, `Cmd + K` en Mac).  
+2️⃣ Escribe un mensaje de commit como `Resuelto conflicto en Ejercicio 1`.  
+3️⃣ Marca la casilla `Push` para subir los cambios automáticamente.  
+4️⃣ Haz clic en `Commit and Push`.
+
+📌 **Comandos equivalentes en la terminal de IntelliJ:**
+```bash
+git add .
+git commit -m "Resuelto conflicto en Ejercicio 1"
+git push origin ejercicio1-rama1
+```
+
+✅ **Ahora los cambios están subidos a GitHub y puedes pasar al siguiente ejercicio.**
+
+---
+Sí, **lo correcto en el flujo del taller es fusionar cada ejercicio en `main`**, ya que los cambios resueltos en cada ejercicio afectan los siguientes.
+
+Voy a ajustar el **Resumen del Flujo de Trabajo en IntelliJ** para reflejar correctamente el proceso de fusionar los cambios en `main` después de resolver los conflictos.
+
+---
+
+### 🎯 **Resumen del Flujo de Trabajo en IntelliJ**
+
+🔹 **1️⃣ Verificar las ramas disponibles (`Fetch`)**  
+📌 `Git > Fetch` o `git fetch --all`
+
+🔹 **2️⃣ Cambiar a la rama del ejercicio**  
+📌 `Git > Branches > Checkout` o `git checkout ejercicioX-ramaY`
+
+🔹 **3️⃣ Fusionar con la otra rama del ejercicio**  
+📌 `Git > Merge into Current` o `git merge ejercicioX-ramaZ`  
+💥 **Si hay conflictos, resolverlos en IntelliJ.**
+
+🔹 **4️⃣ Ejecutar los tests para validar la solución**  
+📌 `Maven > Lifecycle > test` o `mvn test`  
+✅ **Si los tests pasan, proceder al siguiente paso.**
+
+🔹 **5️⃣ Confirmar y subir los cambios en la rama del ejercicio**  
+📌 `Commit and Push` o
+```bash
+git add .
+git commit -m "Resuelto conflicto en Ejercicio X"
+git push origin ejercicioX-ramaY
+```
+
+🔹 **6️⃣ Volver a `main` para fusionar los cambios del ejercicio**  
+📌 `Git > Branches > Checkout > main` o
+```bash
+git checkout main
+```
+
+🔹 **7️⃣ Fusionar la rama del ejercicio en `main`**  
+📌 `Git > Merge into Current` o
+```bash
+git merge ejercicioX-ramaY
+```
+💥 **Si hay conflictos, resolverlos.**
+
+🔹 **8️⃣ Ejecutar nuevamente los tests para asegurarse de que `main` está estable**  
+📌 `Maven > Lifecycle > test` o `mvn test`
+
+🔹 **9️⃣ Confirmar y subir los cambios en `main`**  
+📌 `Commit and Push` o
+```bash
+git add .
+git commit -m "Fusionado Ejercicio X en main"
+git push origin main
+```
+
+✅ **Ahora puedes continuar con el siguiente ejercicio.**
+
+
+
+📌 **Con este flujo, cada ejercicio se resuelve en su propia rama y luego se fusiona en `main`, asegurando que el código siempre esté actualizado y listo para el siguiente ejercicio.** 🚀🔥
+
+📌 **Al completar estos pasos en cada ejercicio, progresarás en el taller resolviendo conflictos de Git de manera efectiva.** 🚀🔥
+
+--- 
 
 ## 🚀 **Git Cheat Sheet - Comandos Útiles**
 Aquí tienes algunos comandos esenciales de Git que te ayudarán durante el taller:
