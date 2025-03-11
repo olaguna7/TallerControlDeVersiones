@@ -6,6 +6,8 @@
 
 ## 🎯 **Bienvenidos al Taller de GitConflicts 🚀**
 
+👨‍🏫 **Profesor:** Alejandro Teixeira Muñoz
+
 📌 **Formato del curso:**  
 ✔️ **2 sesiones (4h + 5h 30min).**  
 ✔️ **Explicaciones rápidas (5-10 min) + Ejercicios prácticos (15-30 min).**  
