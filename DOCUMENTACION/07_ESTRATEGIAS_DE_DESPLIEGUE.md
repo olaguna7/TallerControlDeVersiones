@@ -1,12 +1,6 @@
-¡Genial! Vamos a dividir la documentación en dos archivos:
 
-📄 **07_ESTRATEGIAS_DE_DESPLIEGUE.md** → Documento general sobre estrategias de despliegue en Git.  
-📄 **07A_FLUJO_DE_DESPLIEGUE_DEL_CURSO.md** → Documento específico con el flujo de despliegue para la aplicación del curso.
-
----
-
-# 📄 **07_ESTRATEGIAS_DE_DESPLIEGUE.md**
-## 🚀 **Estrategias de Despliegue con Git**
+# 📄 ESTRATEGIAS_DE_DESPLIEGUE
+## 🚀 Estrategias de Despliegue con Git
 
 En proyectos de software, **el despliegue** es el proceso de publicar una aplicación para que los usuarios puedan acceder a ella. Dependiendo del tamaño del equipo y del entorno, existen diferentes estrategias para gestionar el despliegue utilizando Git.
 
@@ -55,13 +49,27 @@ git checkout v1.0.0
 ## 📌 **4️⃣ Despliegue Automático con Git Hooks (`post-receive`)**
 
 Podemos hacer que un servidor se actualice automáticamente cuando recibe un `push`.  
-En el servidor, creamos un **hook** en `.git/hooks/post-receive`:
+Esto se logra configurando un **hook** en el repositorio del servidor. En este caso, utilizamos un script `post-receive`
+en la carpeta `.git/hooks/`. Este hook se ejecutará automáticamente después de que el servidor reciba los cambios:
+
+1. Se actualiza el directorio de trabajo (`GIT_WORK_TREE`) con la rama `main`.
+2. Se reinicia el servicio (por ejemplo, una aplicación) para que refleje los cambios más recientes.
+
+**Ejemplo del contenido del script `post-receive`:**
+
 ```bash
 #!/bin/bash
+# Define el directorio de trabajo donde está desplegada la aplicación
 GIT_WORK_TREE=/var/www/app git checkout -f main
+# Reinicia el servicio correspondiente para aplicar los cambios
 systemctl restart app.service
 ```
-✅ **Ideal para entornos de desarrollo donde queremos automatizar la actualización.**
+
+⚠️ **Nota:**
+
+- Es importante asegurar que los permisos del archivo del hook sean ejecutables (`chmod +x .git/hooks/post-receive`).
+- Este enfoque es ideal para entornos de desarrollo o pruebas porque simplifica la actualización del servidor al recibir
+  un `push`.
 
 ---
 
@@ -118,3 +126,4 @@ services:
 
 ⬅️ **Anterior: [Buenas Prácticas en Git](06_BUENAS_PRACTICAS_EN_GIT.md)**  
 📌 **Siguiente: [Flujo de Despliegue del Curso](07A_FLUJO_DE_DESPLIEGUE_DEL_CURSO.md) →**
+
