@@ -1,4 +1,3 @@
-
 # 📄 ESTRATEGIAS_DE_DESPLIEGUE
 ## 🚀 Estrategias de Despliegue con Git
 
