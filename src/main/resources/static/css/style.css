@@ -1,0 +1,25 @@
+/* Diseño vibrante con colores intensos y grid layout */
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.calculator-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+input, select, button {
+    margin: 10px;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
