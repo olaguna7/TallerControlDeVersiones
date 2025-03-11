@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class CalculatorService {
     
-    public int sumar(int a, int b) {
-        return a + b; // ✅ Implementación de suma
+    public int multiplicar(int a, int b) {
+        return a * b; // ✅ Implementación de multiplicación
     }
 }
