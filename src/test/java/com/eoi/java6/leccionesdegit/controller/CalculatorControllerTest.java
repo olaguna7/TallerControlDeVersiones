@@ -9,20 +9,20 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(CalculatorController.class)
-public class CalculatorControllerTest {
+class CalculatorControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @Test
-    public void testMostrarCalculadora() throws Exception {
+    void testMostrarCalculadora() throws Exception {
         mockMvc.perform(get("/calculadora"))
                .andExpect(status().isOk())
                .andExpect(view().name("calculator")); // ❌ Fallará porque en  devuelve una cadena en lugar de la vista
     }
 
     @Test
-    public void testCalcular() throws Exception {
+    void testCalcular() throws Exception {
         mockMvc.perform(get("/resultado?num1=5&num2=3"))
                .andExpect(status().isOk())
                .andExpect(model().attribute("resultado", 8)); // ❌ Fallará porque el controlador no maneja la suma
