@@ -1,10 +1,6 @@
-¡Genial! 🎯🚀 Empezaremos con el siguiente documento de la serie: **02_COMO_FUNCIONA_GIT.md**.
 
-Aquí tienes su contenido limpio, listo para que lo copies en el archivo correspondiente dentro del directorio `documentacion`.
+## 📄 CÓMO FUNCIONA GIT
 
----
-
-## 📄 **02_COMO_FUNCIONA_GIT.md**
 ### 🏗 **Cómo Funciona Git: Conceptos Fundamentales**
 
 Git es un **sistema de control de versiones distribuido**, lo que significa que cada desarrollador tiene una copia completa del repositorio en su máquina. A diferencia de los sistemas centralizados como **Subversion (SVN)**, en Git se pueden hacer commits, ramas y comparaciones de código sin necesidad de estar conectado a un servidor remoto.

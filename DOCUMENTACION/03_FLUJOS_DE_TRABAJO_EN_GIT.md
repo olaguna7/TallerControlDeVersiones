@@ -1,8 +1,5 @@
-¡Genial! 🎯 Ahora continuamos con el siguiente documento:
 
----
-
-## 📄 **03_FLUJOS_DE_TRABAJO_EN_GIT.md**
+## 📄 FLUJOS DE TRABAJO EN GIT
 ### 🚀 **Flujos de Trabajo en Git: ¿Cómo Organizar el Desarrollo?**
 
 Cuando varios desarrolladores trabajan en un mismo proyecto, es fundamental seguir un **flujo de trabajo (workflow) organizado** para evitar conflictos, mantener un historial de cambios limpio y garantizar la estabilidad del código.
