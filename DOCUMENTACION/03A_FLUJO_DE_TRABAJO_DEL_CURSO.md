@@ -1,10 +1,4 @@
-¡Me parece genial! 🎯 Vamos a definir claramente el **flujo de trabajo que los alumnos seguirán durante todo el curso**, asegurándonos de que refleje la estructura de trabajo que mencionaste.
-
-Aquí tienes la sección que puedes agregar al documento `03_FLUJOS_DE_TRABAJO_EN_GIT.md` o incluirla como un archivo separado en `documentacion/03A_FLUJO_DE_TRABAJO_DEL_CURSO.md`.
-
----
-
-# 📄 **03A_FLUJO_DE_TRABAJO_DEL_CURSO.md**
+# 📄 FLUJO DE TRABAJO DEL CURSO
 ## 🚀 **Flujo de Trabajo en Git para el Curso**
 
 Durante el curso, utilizaremos un **flujo de trabajo híbrido**, inspirado en los modelos de **Git Flow** y **GitHub Flow**, pero adaptado a la dinámica del curso.

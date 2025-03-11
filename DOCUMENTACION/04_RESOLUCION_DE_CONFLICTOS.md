@@ -1,8 +1,4 @@
-¡Genial! 🎯 Ahora continuamos con el siguiente documento:
-
----
-
-# 📄 **04_RESOLUCION_DE_CONFLICTOS.md**
+# 📄 RESOLUCIÓN DE CONFLICTOS.md
 ## 🚀 **Resolución de Conflictos en Git**
 
 Los conflictos en Git ocurren cuando dos o más desarrolladores modifican las mismas líneas de un archivo en diferentes ramas y luego intentan fusionarlas. Git no puede decidir automáticamente qué cambios conservar, por lo que es necesario resolver el conflicto manualmente.

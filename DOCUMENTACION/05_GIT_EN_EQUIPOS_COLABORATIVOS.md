@@ -1,4 +1,4 @@
-## 📄 **05_GIT_EN_EQUIPOS_COLABORATIVOS**
+## 📄 05 GIT EN EQUIPOS COLABORATIVOS
 
 ### 👥 **Git en Equipos Colaborativos: Buenas Prácticas**
 

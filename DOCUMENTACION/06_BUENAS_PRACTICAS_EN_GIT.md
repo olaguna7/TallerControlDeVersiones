@@ -1,8 +1,4 @@
-¡Genial! Ahora continuamos con la documentación del archivo **`06_BUENAS_PRACTICAS_EN_GIT.md`**, donde estableceremos las mejores prácticas para trabajar con Git de manera eficiente y evitar problemas comunes.
-
----
-
-# 📄 **06_BUENAS_PRACTICAS_EN_GIT.md**
+# 📄 BUENAS PRACTICAS EN GIT
 ## ✅ **Buenas Prácticas en Git**
 
 Trabajar con Git de manera efectiva no solo implica conocer sus comandos, sino también **seguir buenas prácticas** que faciliten la colaboración, reduzcan conflictos y mantengan un historial limpio y útil.
