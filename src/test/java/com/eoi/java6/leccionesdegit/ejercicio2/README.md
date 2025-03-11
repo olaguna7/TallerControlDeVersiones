@@ -1,5 +1,4 @@
-
-### 🚀 **Ejercicio 2: Creación de un Controlador con Thymeleaf en Spring Boot**
+# 🚀 **Ejercicio 2: Creación de un Controlador con Thymeleaf en Spring Boot**
 
 ---
 

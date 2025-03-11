@@ -1,5 +1,4 @@
-
-### 🚀 **Ejercicio 1: Corrección de Métodos en `Calculator`**
+# 🚀 **Ejercicio 1: Corrección de Métodos en `Calculator`**
 
 ---
 

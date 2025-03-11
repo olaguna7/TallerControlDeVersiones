@@ -1,4 +1,4 @@
-### 🚀 **Ejercicio 3: Separación de Lógica en `CalculatorService`**
+# 🚀 **Ejercicio 3: Separación de Lógica en `CalculatorService`**
 
 ---
 
