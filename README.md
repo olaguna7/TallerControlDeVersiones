@@ -107,20 +107,29 @@ Cada ejercicio tiene su propio archivo **README.md** con instrucciones detallada
 
 ### ✅ **Paso 1: Asegurar que tienes todas las ramas disponibles**
 
-🔹 **Si no ves las ramas del ejercicio en IntelliJ, primero haz un `fetch` para traerlas:**
+🔹 **Si no ves las ramas del ejercicio en IntelliJ, primero haz un `fetch` para traer la información de las ramas
+remotas:**
 
 📌 **En IntelliJ IDEA:**  
-1️⃣ Ve al menú **Git > Fetch** o usa el atajo `Ctrl + Alt + J` (Windows/Linux) o `Cmd + Shift + J` (Mac).  
-2️⃣ Espera a que IntelliJ actualice la lista de ramas.  
-3️⃣ Abre la ventana de Git (`Alt + 9` o `View > Tool Windows > Git`) y haz clic en `Branches`.  
-4️⃣ Expande `Remote Branches` y verifica que aparecen las ramas `ejercicioX-rama1` y `ejercicioX-rama2`.
+1️⃣ Ve al menú **Git > Fetch** o usa el atajo `Ctrl + Alt + J` (Windows/Linux) o `Cmd + Shift + J` (Mac).
+
 
 📌 **Comando equivalente en la terminal de IntelliJ:**
 ```bash
 git fetch --all
 ```
 
-✅ **Ahora verás todas las ramas remotas en tu IntelliJ.**
+2️⃣ Espera a que IntelliJ actualice la lista de referencias remotas.  
+3️⃣ Abre la ventana de Git (`Alt + 9` o `View > Tool Windows > Git`) y haz clic en `Branches`.  
+4️⃣ Expande `Remote Branches` y verifica que aparecen las ramas `ejercicioX-rama1` y `ejercicioX-rama2`.
+
+
+📌 **Nota:** Si también necesitas descargar el contenido de las ramas remotas, debes crear localmente una copia de las
+ramas remotas que desees, usando el siguiente comando, aunque por el momento no hace falta:
+
+```bash
+git checkout -b [nombre_rama_local] origin/[nombre_rama_remota]
+```
 
 ---
 
@@ -133,7 +142,7 @@ git fetch --all
 
 📌 **Comando equivalente en la terminal de IntelliJ:**
 ```bash
-git checkout ejercicio1-rama1
+git checkout -b ejercicio1-rama1
 ```
 
 ✅ **Ahora estás en la rama del ejercicio y listo para el siguiente paso.**

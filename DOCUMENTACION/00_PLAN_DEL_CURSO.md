@@ -1,10 +1,7 @@
-¡Genial! Voy a ajustar la **columna de notas** para que refleje mejor que los alumnos estarán resolviendo conflictos y fusionando ramas **constantemente** en los ejercicios. Además, mantendremos el enfoque **ágil y práctico**, con lecturas cortas y ejercicios de **15 minutos**.
-
----
 
 # 📄 PLAN DEL CURSO
 
-## 🎯 **Bienvenidos al Taller de GitConflicts 🚀**
+## 🎯 **Bienvenidos al Taller de Control de Versiones 🚀**
 
 👨‍🏫 **Profesor:** Alejandro Teixeira Muñoz
 
