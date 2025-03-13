@@ -33,10 +33,8 @@ Si aún no los tienes instalados, puedes descargarlos desde sus sitios oficiales
 Para realizar el taller, primero debes hacer un **fork** del repositorio original.
 
 ### ✅ **Paso 1: Hacer un Fork del Repositorio en GitHub**
-1️⃣ **Ve al siguiente enlace:**  
-👉 [https://github.com/ateixeiramunoz/leccionesdegit](https://github.com/ateixeiramunoz/leccionesdegit)  
-2️⃣ **Haz clic en el botón `Fork` (arriba a la derecha).**  
-3️⃣ **Selecciona tu cuenta de GitHub o una organización donde quieras guardar el fork.**
+1️⃣ **Haz clic en el botón `Fork` (arriba a la derecha).**  
+2️⃣ **Selecciona tu cuenta de GitHub o una organización donde quieras guardar el fork.**
 
 Esto creará una copia del repositorio en tu cuenta, donde podrás trabajar sin afectar el original.
 
