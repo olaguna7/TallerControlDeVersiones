@@ -222,8 +222,6 @@ git push origin ejercicio1-rama1
 ---
 Sí, **lo correcto en el flujo del taller es fusionar cada ejercicio en `main`**, ya que los cambios resueltos en cada ejercicio afectan los siguientes.
 
-Voy a ajustar el **Resumen del Flujo de Trabajo en IntelliJ** para reflejar correctamente el proceso de fusionar los cambios en `main` después de resolver los conflictos.
-
 ---
 
 ### 🎯 **Resumen del Flujo de Trabajo en IntelliJ**
