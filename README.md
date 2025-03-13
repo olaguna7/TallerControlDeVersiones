@@ -48,7 +48,7 @@ Esto creará una copia del repositorio en tu cuenta, donde podrás trabajar sin 
 3️⃣ **En `Version Control`, elige `Git`**  
 4️⃣ **Introduce la URL de tu fork del repositorio:**
    ```
-   https://github.com/TU-USUARIO/leccionesdegit.git
+   https://github.com/TU-USUARIO/TallerControlDeVersiones.git
    ```
 5️⃣ **Haz clic en `Clone` y espera a que IntelliJ descargue el proyecto.**  
 6️⃣ **Una vez clonado, IntelliJ detectará automáticamente que es un proyecto Maven.**  
